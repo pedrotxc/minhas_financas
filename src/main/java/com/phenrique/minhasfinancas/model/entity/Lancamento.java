@@ -27,7 +27,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Table(name = "lancamentos", schema = "financas")
+@Table(name = "lancamento", schema = "financas")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -37,7 +37,7 @@ import lombok.ToString;
 public class Lancamento {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
 	private Long id;
 	@Column(name = "descricao")
